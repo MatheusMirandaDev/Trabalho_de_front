@@ -126,6 +126,51 @@ html, body {
         }
 
     }
-
-
 }
+
+#msgErro {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #F1F3F6;
+    font-size: 16px;
+    padding: 16px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.icon-eye-close,
+.icon-eye-open {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #8B8B8B;
+    font-size: 1.2em;
+}
+
+.icon-eye-close {
+    display: block;
+}
+
+.icon-eye-open {
+    display: none;
+}
+
+
+

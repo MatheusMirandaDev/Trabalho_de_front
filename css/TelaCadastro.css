@@ -68,3 +68,29 @@ button {
 button:hover {
     background-color: #555;
 }
+
+
+.input-container {
+    position: relative;
+}
+
+.icon-eye-close,
+.icon-eye-open {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    font-size: 1.2em;
+}
+
+.icon-eye-close {
+    display: block;
+}
+
+.icon-eye-open {
+    display: none;
+}
+
+
