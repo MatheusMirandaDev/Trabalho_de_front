@@ -1,0 +1,60 @@
+Por Eric Massen
+package heranca;
+class Pessoa{
+    protected String nome;
+    protected int idade;
+
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+    void exibirInfo(){
+        System.out.println("Nome: " + nome+"\nIdade: " + idade);
+    }
+}
+class Aluno extends Pessoa{
+    String matricula;
+
+    public Aluno(String nome, int idade, String matricula) {
+        super(nome, idade);
+        this.matricula = matricula;
+    }
+    @Override
+    void exibirInfo(){
+        System.out.println("Matricula: " + matricula+"\nNome: " + nome+"\nIdade: " + idade);
+    }
+}
+
+class Professor extends Pessoa{
+
+    double salario;
+
+    public Professor(String nome, int idade, double salario) {
+        super(nome, idade);
+        this.salario = salario;
+    }
+    @Override
+    void exibirInfo(){
+        System.out.println("Nome: " + nome+"\nIdade: " + idade+"\nSalário: " + salario);
+    }
+}
+public class Heranca {
+    public static void main(String[] args) {
+        Aluno aluno = new Aluno("123", 15, "Davi");
+        Professor professor = new Professor("Irineu",35,2500);
+
+    }
+}
