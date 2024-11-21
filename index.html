@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+</head>
+<body>
+    <div class="container">
+        <div class="first-column">
+            <img src="assets/svg/logo.svg" alt="" srcset="">
+
+            <h2>Acesse a sua conta</h2>
+
+            <div id="msgErro"></div>
+            <div id="msgSucesso"></div>
+
+            <form class="form">
+
+                <label id="labelEmail" for="email">Email</label>
+                <input type="email" placeholder="email@email.com" id="email" required>
+
+                <br>
+
+                <label id="labelPassword" for="password">Senha</label>
+                <div class="input-container">
+                    <input type="password" placeholder="digite sua senha" id="password" required>
+                    <i class="icon-eye-close"></i>
+                    <i class="icon-eye-open" style="display: none;"></i> 
+                </div>
+
+
+                <a onclick="Nova_senha()"rel="noopener noreferrer">esqueceu sua senha?</a>
+
+                <div class="btn-wrapper">
+                    <button type="button" onclick="logar()" class="btn-primary">Login</button>
+                    <div class="divider">
+                        <div></div>
+                        <span>ou</span>
+                        <div></div>
+                    </div>
+                    <button type="button" onclick="criar_conta()" class="btn-secondary">Criar uma conta</button>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="second-column">
+            <img src="assets/svg/main-illustration.svg" alt="" srcset="">
+            <p class="description">Simplifique sua <b>análise</b>, acelere seu <b>sucesso!</b></p>
+        </div>
+    </div>
+
+    <script src="./JS/index.js"></script>
+</body>
+</html>

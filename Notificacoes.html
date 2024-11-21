@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Notificacoes.css">
+    <title>Página de Notificações</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <img src="https://i.redd.it/essa-foto-ia-que-t%C3%B4-usando-de-perfil-no-wpp-ficou-muito-v0-1m4zmh31i8yc1.jpg?width=3070&amp;format=pjpg&amp;auto=webp&amp;s=3dc837b42ea59d72f9616248f3f0cf0ccc9ae0ee" alt="Perfil">
+            <h2 id="logado"> </h2>
+            <h3>Suporte ao cliente</h3>
+            <button onclick="home()">Home</button>
+            <button onclick="relatorios()">Relatórios</button>
+            <button onclick="graficos()">Gráficos</button>
+            <button onclick="notificacoes()" style="background-color: #c75252;">Notificações</button>
+            <button onclick="configuracoes()">Configurações</button>
+            <button onclick="ajuda()">Ajuda</button>
+            <button onclick="sair()"> Sair </button>
+        </aside>
+
+        <main class="content">
+            <h1>Notificações</h1>
+
+            <div class="notification">
+                <h2>Nova mensagem de suporte</h2>
+                <p>Você recebeu uma nova mensagem da equipe de suporte.</p>
+                <time>15 de novembro de 2024, 10:30</time>
+            </div>
+
+            <div class="notification">
+                <h2>Atualização no sistema</h2>
+                <p>O sistema foi atualizado para a versão 2.1. Confira as novidades!</p>
+                <time>14 de novembro de 2024, 18:45</time>
+            </div>
+
+            <div class="notification">
+                <h2>Relatório semanal disponível</h2>
+                <p>O relatório da semana está pronto para consulta.</p>
+                <time>13 de novembro de 2024, 08:00</time>
+            </div>
+        </main>
+    </div>
+    <script src="./JS/Notificacoes.js"></script>
+</body>
+</html>

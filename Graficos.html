@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Graficos.css">
+    <title>Gráficos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <img src="https://i.redd.it/essa-foto-ia-que-t%C3%B4-usando-de-perfil-no-wpp-ficou-muito-v0-1m4zmh31i8yc1.jpg?width=3070&amp;format=pjpg&amp;auto=webp&amp;s=3dc837b42ea59d72f9616248f3f0cf0ccc9ae0ee" alt="Perfil">
+            <h2 id="logado"> </h2>
+            <h3>Suporte ao cliente</h3>
+            <button onclick="home()">Home</button>
+            <button onclick="relatorios()">Relatórios</button>
+            <button onclick="graficos()" style="background-color: #c75252;">Gráficos</button>
+            <button onclick="notificacoes()">Notificações</button>
+            <button onclick="configuracoes()">Configurações</button>
+            <button onclick="ajuda()">Ajuda</button>
+            <button onclick="sair()"> Sair </button>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <!-- Produtos Mais Vendidos -->
+            <div class="section-title">Produtos Mais Vendidos</div>
+            <div class="chart-container">
+                <canvas id="produtosMaisVendidos"></canvas>
+            </div>
+
+            <!-- Vendas por Período -->
+            <div class="section-title">Vendas por Período</div>
+            <div class="chart-container">
+                <canvas id="vendasPorPeriodo"></canvas>
+            </div>
+
+            <!-- Vendas por Produto -->
+            <div class="section-title">Vendas por Produto</div>
+            <div class="chart-container">
+                <canvas id="vendasPorProduto"></canvas>
+            </div>
+
+            <!-- Clientes Mais Frequentes -->
+            <div class="section-title">Clientes Mais Frequentes</div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Compras</th>
+                            <th>Total Gasto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cliente A</td>
+                            <td>25</td>
+                            <td>R$ 2.500,00</td>
+                        </tr>
+                        <tr>
+                            <td>Cliente B</td>
+                            <td>18</td>
+                            <td>R$ 1.800,00</td>
+                        </tr>
+                        <tr>
+                            <td>Cliente C</td>
+                            <td>15</td>
+                            <td>R$ 1.500,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Vendas por Loja -->
+            <div class="section-title">Vendas por Loja</div>
+            <div class="chart-container">
+                <canvas id="vendasPorLoja"></canvas>
+            </div>
+
+            <!-- Vendas por Vendedor -->
+            <div class="section-title">Vendas por Vendedor</div>
+            <div class="chart-container">
+                <canvas id="vendasPorVendedor"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <script src="./JS/Graficos.js"></script>
+</body>
+</html>

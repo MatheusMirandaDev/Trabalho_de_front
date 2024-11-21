@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="https://i.redd.it/essa-foto-ia-que-t%C3%B4-usando-de-perfil-no-wpp-ficou-muito-v0-1m4zmh31i8yc1.jpg?width=3070&amp;format=pjpg&amp;auto=webp&amp;s=3dc837b42ea59d72f9616248f3f0cf0ccc9ae0ee"
+                alt="Perfil">
+            <h2 id="logado"> </h2>
+            <h3>Suporte ao cliente</h3>
+            <button onclick="home()" style="background-color: #c75252;">Home</button>
+            <button onclick="relatorios()">Relatórios</button>
+            <button onclick="graficos()">Gráficos</button>
+            <button onclick="notificacoes()">Notificações</button>
+            <button onclick="configuracoes()">Configurações</button>
+            <button onclick="ajuda()">Ajuda</button>
+            <button onclick="sair()"> Sair </button>
+        </aside>
+
+        <main class="content">
+            <div class="top-bar">
+                <div class="dropdowns">
+                <div class="dropdown">
+                    Equipe
+                    <select>
+                        <option value="equipe1">Equipe 1</option>
+                        <option value="equipe2">Equipe 2</option>
+                        <option value="equipe3">Equipe 3</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    Data
+                    <select>
+                        <option value="hoje">Hoje</option>
+                        <option value="ontem">Ontem</option>
+                        <option value="semana">Última semana</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    Usuário
+                    <select>
+                        <option value="usuario1">Usuário 1</option>
+                        <option value="usuario2">Usuário 2</option>
+                        <option value="usuario3">Usuário 3</option>
+                    </select>
+                </div>
+            </div>
+                <a href="https://www.fasthelp.com.br" target="_blank">
+                    <img src="https://www.helloethics.com/fasthelp/pt/image/logo.png" alt="" srcset="">
+                </a>
+
+            </div>
+
+            <div class="large-box">
+                <div class="chart-container">
+                    <canvas id="graficoBarras"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="graficoBarras2"></canvas>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="chart-box">
+                    <canvas id="graficoLinhas"></canvas>
+                    <canvas id="graficoLinhas2"></canvas>
+                </div>
+                <div class="info-box"><canvas id="graficoPizza"></canvas></div>
+            </div>
+
+            <div class="bottom-grid">
+                <div class="small-box"><canvas id="codigoDeBarras"></canvas></div>
+                <div class="small-box">
+                    <h4>Informações Gerais</h4>
+                    <p>Clientes Ativos: <strong>150</strong></p>
+                    <p>Vendas Totais: <strong>R$ 12.500</strong></p>
+                </div>
+                <div class="small-box">
+                    <p><strong>Crescimento:</strong> +12% comparado ao mês passado</p>
+                    <p><strong>Categoria em Alta:</strong> Eletrônicos</p>
+                    <p><strong>Nova Meta:</strong> R$ 25.000</p>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+    <script src="./JS/Home.js"></script>
+</body>
+
+</html>

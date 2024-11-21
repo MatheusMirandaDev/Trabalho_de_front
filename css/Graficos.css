@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffff;
+    }
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 15%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ff0000;
+}
+
+.sidebar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: #ddd;
+}
+
+
+.sidebar button:hover {
+    background-color: #c75252;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f76363;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Adiciona cursor de ponteiro */
+}
+        
+.content {
+    width: 85%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.chart-container, .table-container {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #f76363;
+    color: #fff;
+}

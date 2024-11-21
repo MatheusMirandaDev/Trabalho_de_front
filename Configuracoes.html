@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Configuracoes.css">
+    <title>Configurações</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <img src="https://i.redd.it/essa-foto-ia-que-t%C3%B4-usando-de-perfil-no-wpp-ficou-muito-v0-1m4zmh31i8yc1.jpg?width=3070&format=pjpg&auto=webp&s=3dc837b42ea59d72f9616248f3f0cf0ccc9ae0ee" alt="Perfil">
+            <h2 id="logado"></h2>
+            <h3>Suporte ao cliente</h3>
+            <button onclick="home()" class="sidebar-button">Home</button>
+            <button onclick="relatorios()" class="sidebar-button">Relatórios</button>
+            <button onclick="graficos()" class="sidebar-button">Gráficos</button>
+            <button onclick="notificacoes()" class="sidebar-button">Notificações</button>
+
+            <!-- Dropdown de Configurações -->
+            <button class="sidebar-button" id="config-button">Configurações</button>
+            <div class="dropdown" id="config-dropdown">
+                <button class="dropdown-item" data-section="perfil">Perfil</button>
+                <button class="dropdown-item" data-section="notificacoes">Notificações</button>
+                <button class="dropdown-item" data-section="tema">Tema</button>
+                <button class="dropdown-item" data-section="privacidade">Privacidade</button>
+                <button class="dropdown-item" data-section="sistema">Sistema</button>
+            </div>
+
+            <button onclick="ajuda()" class="sidebar-button">Ajuda</button>
+            <button onclick="sair()" class="sidebar-button">Sair</button>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <div id="perfil" class="settings-section active">
+                <h1>Perfil</h1>
+                <h2>Informações Pessoais</h2>
+                <p>Atualize suas informações de perfil.</p>
+                <input type="text" placeholder="Nome Completo">
+                <input type="email" placeholder="E-mail">
+                <button>Salvar Alterações</button>
+
+                <h2 style="margin-top: 50px;">Alterar Senha</h2>
+                <p>Redefina sua senha para garantir a segurança.</p>
+                <input type="password" placeholder="Senha Atual">
+                <input type="password" placeholder="Nova Senha">
+                <button>Salvar Alterações</button>
+            </div>
+
+            <div id="notificacoes" class="settings-section">
+                <h1>Notificações</h1>
+                <h2 style="margin-top: 20px;">Configurações de Notificações</h2>
+                <p>Escolha como você deseja receber notificações.</p>
+                <label><input type="checkbox"> E-mail</label><br>
+                <label><input type="checkbox"> SMS</label><br>
+                <label><input type="checkbox"> Notificações push</label><br>
+                <button>Salvar Alterações</button>
+            </div>
+
+            <div id="tema" class="settings-section">
+                <h1>Tema</h1>
+                <h2 style="margin-top: 20px;">Preferências de Tema</h2>
+                <p>Escolha entre os temas disponíveis.</p>
+                <label><input type="radio" name="tema" value="claro"> Modo Claro</label><br>
+                <label><input type="radio" name="tema" value="escuro"> Modo Escuro</label><br>
+                <button>Salvar Alterações</button>
+            </div>
+
+            <div id="privacidade" class="settings-section">
+                <h1>Privacidade</h1>
+                <h2 style="margin-top: 20px;">Configurações de Privacidade</h2>
+                <p>Gerencie as permissões e visibilidade do seu perfil.</p>
+                <label><input type="checkbox"> Permitir que outros usuários vejam meu perfil</label><br>
+                <label><input type="checkbox"> Ativar autenticação em dois fatores</label><br>
+                <button>Salvar Alterações</button>
+            </div>
+
+            <div id="sistema" class="settings-section">
+                <h1>Sistema</h1>
+                <h2>Configurações do Sistema</h2>
+                <p>Personalize o idioma e outras configurações do sistema.</p>
+                <select>
+                    <option>Português</option>
+                    <option>Inglês</option>
+                    <option>Espanhol</option>
+                </select><br>
+                <button>Salvar Alterações</button>
+            </div>
+        </main>
+    </div>
+    <script src="./JS/Configuracoes.js"></script>
+</body>
+</html>
