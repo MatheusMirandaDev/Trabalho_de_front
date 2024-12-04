@@ -40,5 +40,5 @@ function ajuda() {
 function sair() {
     localStorage.removeItem('token');
     localStorage.removeItem('userLogado');
-    window.location.href = "./html/index.html";
+    window.location.href = "./index.html";
 }

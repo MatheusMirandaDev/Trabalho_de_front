@@ -150,7 +150,7 @@ function cadastrar() {
 
         setTimeout(() => {
             window.location.href = 'index.html'
-        }, 2000)
+        }, 1500)
 
     } else {
         msgErro.setAttribute("style", "display: block");
